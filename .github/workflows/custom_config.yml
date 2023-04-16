@@ -1,10 +1,10 @@
 name: CI-CD pipeline to AWS
 env:
-  EB_S3_BUCKET_NAME: "elasticbeanstalk-us-west-2-342321877505"
-  EB_APPLICATION_NAME: "enotes_eb"
-  EB_ENVIRONMENT_NAME: "enotesenv1"
-  DEPLOY_PACKAGE_NAME: "django-app-enotes-${{ github.sha }}.zip"
-  AWS_REGION_NAME: "us-west-2"
+  EB_S3_BUCKET_NAME: "raj-enotes"
+  EB_APPLICATION_NAME: "raj-enotes"
+  EB_ENVIRONMENT_NAME: "Rajenotes-env"
+  DEPLOY_PACKAGE_NAME: "django-app-raj-enotes-${{ github.sha }}.zip"
+  AWS_REGION_NAME: "us-east-2"
 
 on:
   push:
